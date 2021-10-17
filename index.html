@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam's Portfolio</title>
+    <meta name ="description" content = "Portfolio for web developer Sam">
+    <meta name = "author" content = "Sam">
+    <script src="https://kit.fontawesome.com/972505fc13.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href = "assets/style.css">
+<script src = "main.js" defer></script>
+
+</head>
+<body> 
+
+<!-- Navbar -->
+   <nav id = "navbar">
+   <div class = "navbar_logo">
+   <i class="fas fa-user-alt"></i>
+   <a href="#">Sam</a>
+   </div>
+  <div class = "navbar_menu">
+<ul class="navbar_menu">
+    <li class="navbar_menu_item active">Home</li>
+    <li class="navbar_menu_item">About</li>
+    <li class="navbar_menu_item">Skills</li>
+    <li class="navbar_menu_item">My work</li>
+    <li class="navbar_menu_item">Testimonial</li>
+    <li class="navbar_menu_item">Contact</li>
+</ul>
+</div> 
+
+
+<!--Toggle Button-->
+<button class="navbar__toggle-btn">
+  <i class="fas fa-bars"></i>
+</button>
+   </nav>
+
+   <!-- Home -->
+   <section id="home">
+       <img src="images/Profile.png" alt="Sam's profile photo" class="home__avatar" />
+       <h1 class ="home__title">Hello, <br/>I'm Sam Hong</h1>
+<h2 class="home__description">A web developer currently residing in Melbourne, Australia</h2>
+<button class="home__contact">Contact Me</button>
+   </section>
+
+   <!-- About -->
+   <section id = "about" class="section section__container">
+    <h1>About me</h1>
+    <p>
+    Hello, my name is Sam, I have a desire for becoming a web developer, currently learning front-end skills such as CSS & JAVASCRIPT as well as back-end skills in the near future. 
+    </p> 
+    <div class="about__majors">
+        <div class="major">
+        <div class="major__icon">
+            <i class="fab fa-html5"></i>
+        </div>
+        <h2 class="major__title">Front-end</h2>
+        <div class="major__description">
+            HTML, CSS, JavaScript, Web APIs
+        </div>
+    </div>
+    <div class="major">
+        <div class="major__icon">
+            <i class="fab fa-node-js"></i>
+        </div>
+        <h2 class="major__title">Back-end</h2>
+        <p class="major__description">
+           Node JS
+        </p>
+        </div>
+    </div>
+    <div class="about__education">
+        <div class="education">
+            <img src="images/monash_logo.png" alt="Monash University Coding Boot Camp" class="education__logo">
+            <div class="education__description">
+            <p class="education__name">
+                Monash University Coding Boot Camp
+            </p>
+            <p class="education__period">
+                Aug 2021 - Feb 2022
+            </p>
+        </div>
+        </div>
+        <div class="education">
+            <img src="images/monash_logo.png" alt="Monash University Coding Boot Camp" class="education__logo">
+            <div class="education__description">
+                <p class="education__name">
+                    Monash University Coding Boot Camp
+                </p>
+                <p class="education__period">
+                    Aug 2021 - Feb 2022
+                </p>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <!-- Skills -->
+   <section id = "skills" class="section">
+       <div class = "section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+         Understanding all phases of the web development life-cycle. 
+         Passion for learning new technologies.
+         Capable of working within a team environment as well as working independently.
+         Abilly to plan time management, work under strict time pressure and adapt quicklky when needed.  
+        </p>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 80%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>60%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 60%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>NodeJS</span>
+                <span>50%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Studio Code</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </section>
+
+   <!-- Work -->
+   <section id = "work" class="section">
+     <div class="section__container">
+      <h1> My work</h1> 
+      <h3>Projects</h3>
+      <div class="work__categories">
+       <button class="category__btn active">All
+         <span class = "category__count">1</span></button>
+       <button class="category__btn">Front-end<span class = "category__count">1</span></button>
+       <button class="category__btn">Back-end<span class = "category__count"></span></button>
+       <button class="category__btn">More to come<span class = "category__count"></span></button>
+      </div>
+
+      <div class="work__projects">
+          <a href="https://annanguyen1.github.io/Track-Journal/homepage.html"
+           class="project"
+           target = "blank">
+           <img
+            class ="project__img"
+            src = "images/projects/WalkingJournal.jpg"
+            alt = "WalkingJournal"
+            />
+           <div class="project__description">
+               <h3>Walking Journal (Group Project)</h3>
+               <span>Website with HTML, CSS and JavaScript</span>
+           </div>
+          </a>
+      </div>
+     </div>
+    </section>
+
+   <!-- Testimonials -->
+   <section id = "testimonials" class="section">
+  <div class="section__container">
+    <h1>Testimonials</h1>
+    <h3>See what they say about me</h3>
+    <div class="testmonials">
+     <div class="testimonial">
+         <img src="images/testimonial/people1.jpg"
+          alt="People"
+          class="testimonial__avatar"/>
+          <div class="testimonial__speech-bubble">
+              <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <p class="name"><a href=""></a></p>
+          </div>
+     </div>
+     <div class="testimonial">
+          <div class="testimonial__speech-bubble">
+              <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <p class="name"><a href=""></a></p>
+          </div>
+          <img src="images/testimonial/people1.jpg"
+          alt="People"
+          class="testimonial__avatar"/>
+     </div>
+  </div>
+  </div>
+  </section>
+
+   <!-- Contact -->
+   <section id = "contact" class="section">
+       <h1 class="contact__title">Let's talk</h1>
+       <h2 class="contact__email">s.hong0125@gmail.com</h2>
+       <div class="contact__links">
+           <a href = "https://github.com/s-hong0125" target="_blank">
+            <i class="fab fa-github"></i>
+           </a>
+           <a href = "#" target="_blank">
+            <i class="fab fa-instagram-square"></i>
+           </a>
+       </div>
+       <p class="contact__rights">2021 Sam Hong - All rights reserved</p>
+   </section>
+</body>
+</html>
